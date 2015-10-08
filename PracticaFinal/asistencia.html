@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/base.css" rel="stylesheet" />
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+    <nav id="mainNav" class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html">Nombre Web</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="localizacion.html">Localizacion</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="congreso.html">Mapa Congreso</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="conferencias.html">Conferencias</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Asistencia</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+<div class="container" style="width: 30%; margin-top: 5%;">
+
+    <form role="form">
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" id="nombre"
+                   placeholder="Introduce un nombre">
+        </div>
+        <div class="form-group">
+            <label for="apellido">Apellido</label>
+            <input type="text" class="form-control" id="apellido"
+                   placeholder="Introduce un apellido">
+        </div>
+        <button type="button" class="btn btn-default" id="enviar">Enviar</button>
+    </form>
+</div>
+
+<div class="container" style="border: 1px solid; width: 60%; overflow: scroll; height: 500px; margin-top: 10%; background: rgba(255, 255, 255, .5);">
+    <table id="asistentes" class="table table-striped" style="overflow: scroll">
+        <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+    <script src="Ajax.js"></script>
+</body>
+</html>

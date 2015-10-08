@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/base.css" rel="stylesheet" />
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+    <nav id="mainNav" class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html">Nombre Web</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="localizacion.html">Localizacion</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="congreso.html">Mapa Congreso</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="conferencias.html">Conferencias</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="asistencia.html">Asistencia</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-6 text-center" style="min-height: 500px;">
+            <h3>Conferencias Disponibles</h3>
+            <ul id="disponibles">
+                <li draggable="true" id="1">Windows 10 y Windows Platform</li>
+                <li draggable="true" id="2">Windows 10 para los profesionales IT</li>
+                <li draggable="true" id="3">Novedades en XMAL</li>
+                <li draggable="true" id="4">Unit Testing Windows 10</li>
+                <li draggable="true" id="5">Monotoriza tus apps</li>
+                <li draggable="true" id="6">Windows 10 & Cloud:</li>
+                <li draggable="true" id="7">Having Fun with Windows 10:</li>
+                <li draggable="true" id="8">Windows 10 for IT Professionals</li>
+                <li draggable="true" id="9">Island Woods</li>
+                <li draggable="true" id="10">¿Universales en C++?</li>
+            </ul>
+        </div>
+        <div class="col-md-6 text-center" style="min-height: 500px;">
+            <h3>Conferencias Elegidas</h3>
+            <ul id="elegidas" draggable="true" style="min-height: 500px;">
+
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+
+<script src="dragDrop.js"></script>
+</body>
+</html>

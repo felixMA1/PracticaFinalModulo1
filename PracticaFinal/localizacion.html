@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/base.css" rel="stylesheet" />
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+    <nav id="mainNav" class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html">Nombre Web</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="localizacion.html">Localizacion</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="congreso.html">Mapa Congreso</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="conferencias.html">Conferencias</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="asistencia.html">Asistencia</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+<div class="container" style="min-height: 500px; margin-top: 15%;">
+
+    <div class="row">
+        <div class="col-md-6 text-center" style=" min-height: 300px;">
+            <h3 style=" font-size: 2em;">Localizacion del Congreso</h3>
+            <img id="mapaCongreso" class="img-thumbnail"/>
+        </div>
+        <div class="col-md-6 text-center" style=" min-height: 300px;">
+            <h3 style=" font-size: 2em;">Su localizacion</h3>
+            <img id="mapaUser" class="img-thumbnail"/>
+        </div>
+    </div>
+</div>
+
+
+    <script src="scriptsLocalizacion.js"></script>
+</body>
+</html>
